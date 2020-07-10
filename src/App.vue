@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>Tags inlined</h2>
+    <tags3x-inline/>
+    <hr>
+    <h2>Tags stacked</h2>
+    <tags3x/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import tags3x from "./components/tags3x";
+import tags3xInline from "./components/tags3xInline";
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    tags3x,
+    tags3xInline
   }
-}
+};
 </script>
 
 <style>
